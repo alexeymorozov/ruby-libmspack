@@ -1,3 +1,5 @@
+$LOAD_PATH.prepend(File.expand_path('../ffi-compiler/lib', __dir__))
+
 require 'ffi-compiler/compile_task'
 
 FFI::Compiler::CompileTask.new('libmspack') do |compiler|
